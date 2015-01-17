@@ -1,8 +1,9 @@
 import sendemail
+import email_info
 
-#email_list = email_info.get_email_dict.keys()
+email_list = email_info.get_email_dict().keys()
               
-email_list = ["zalee@uci.edu"]
+#email_list = ["zalee@uci.edu"] #sends emails to myself for testing purposes
 
 original_text = ( \
 """Have you taken care of today's reading for AACF Freshman Small Group?
