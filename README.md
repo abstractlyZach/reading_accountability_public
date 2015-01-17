@@ -14,5 +14,6 @@ mailing list.
 I'm using crontab to schedule my computer to run the scripts at specific intervals. You can see my crontab
 file, which is named crontab_file.txt in this repository. 
 
-If you'd like to use my code, feel free to! Just contact me and you'll need to create your own crontab file
-as well as an email_info.py file.
+If you want to use my code, you'll need to create your own crontab file
+as well as an email_info.py file. Contact me and let me know how you use it!
+
