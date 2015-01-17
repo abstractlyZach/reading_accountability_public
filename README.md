@@ -15,5 +15,6 @@ I'm using crontab to schedule my computer to run the scripts at specific interva
 file, which is named crontab_file.txt in this repository. 
 
 If you want to use my code, you'll need to create your own crontab file
-as well as an email_info.py file. Contact me and let me know how you use it!
+as well as an email_info.py file. (Yes, I know my system is extremely narrow in scope.)
+Contact me and let me know how you use it!
 
