@@ -1,22 +1,9 @@
 # reading_accountability_public
 Designed to automate public accountability for AACF UCI Freshman small group. http://goo.gl/zjL0GN
 
-
-I know my naming conventions are all over the place. I didn't expect this project to be 
-as big as it ended up being hahahaha!
-
-It started as a small project to hack something together and put my Raspberry Pi to good use.
-I've sunk around 25 hours into this project and it was worth every minute.
-
-I wrote another script called email_info.py that holds my login credentials with get_login() and 
-get_password() as well as a dictionary holding the emails and names of all of the people on the
-mailing list. 
+I wrote another script called email_info.py with functions that return my login credentials (get_login() and 
+get_password()) and a function that returns a dictionary mapping the names to the emails of all of the people on the
+mailing list (get_email_dict()).
 
 I'm using crontab to schedule my computer to run the scripts at specific intervals. You can see my crontab
 file, which is named crontab_file.txt in this repository. 
-
-If you want to use my code, you'll need to create your own crontab file
-as well as an email_info.py file. (My system is extremely narrow in scope as it is right now.
-If you could find some other application I would be pretty amazed xP)
-Contact me and let me know how you use it!
-
