@@ -48,11 +48,11 @@ Features
 
 Technical details:
 -------------
-emailinfo.py:
-Contains functions that return my login credentials (get_login() and get_password()) and a function that returns a dictionary mapping the names to the emails of all of the people on the mailing list (get_email_dict()). This is not included in my Github repository since it contains my credentials and other people's email addresses.
+* emailinfo.py:
+      - Contains functions that return my login credentials (get_login() and get_password()) and a function that returns a dictionary mapping the names to the emails of all of the people on the mailing list (get_email_dict()). This is not included in my Github repository since it contains my credentials and other people's email addresses.
 
-crontab_file.txt:
-I'm using crontab to schedule my computer to run the scripts at specific intervals. It's a utility that comes with most Unix systems that you can set up to schedule your computer to automatically run programs at specific times.
+* crontab_file.txt:
+      - I'm using crontab to schedule my computer to run the scripts at specific intervals. It's a utility that comes with most Unix systems that you can set up to schedule your computer to automatically run programs at specific times.
 
 * emailsender.py:
       - Executes email sending by calling functions in sendemail.py. Logs into my email account and sends out emails to everyone on the mailing list (found in emailinfo.py)
