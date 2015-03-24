@@ -18,7 +18,7 @@ We needed a system that would:
       (consciously or unconsciously) that the reading and its associated tasks were a chore.
 0. Not require tremendous upkeep. The system should be autonomous and low-maintenence. Whoever has to take care     of it should only have to deal with the occasional minor bugs.
  
-It was time to stop only "trying harder"; it was time to leverage programming skills and psychology to achieve our goals.
+It was time to stop <b>only</b> "<i>trying harder</i>"; it was time to leverage programming skills and psychology to achieve our goals.
 
 
 
