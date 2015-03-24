@@ -13,10 +13,10 @@ Each of us in our group agreed that we wanted to create good habits and that one
 
 We needed a system that would:
 
-0. record who read each day so that all group members could see
-0. minimize effort on the group members' side so that there would be the fewest reasons possible to feel 
-      (consciously or unconsciously) that the reading and its associated tasks were a chore
-0. not require tremendous upkeep. The system should be autonomous and low-maintenence. Whoever has to take care     of it should only have to deal with the occasional minor bugs.
+0. Record who read each day so that all group members could see.
+0. Minimize effort on the group members' side so that there would be the fewest reasons possible to feel 
+      (consciously or unconsciously) that the reading and its associated tasks were a chore.
+0. Not require tremendous upkeep. The system should be autonomous and low-maintenence. Whoever has to take care     of it should only have to deal with the occasional minor bugs.
  
 It was time to stop only "trying harder"; it was time to leverage programming skills and psychology to achieve our goals.
 
@@ -33,14 +33,12 @@ Features
             - "Joe missed 2 readings this week and I only missed 1. Good for me!"
             
             - "Bob had a perfect week. He's nothing special; if he can do it, so can I!"
-    - Hawthorne Effect AKA Observer Effect (http://en.wikipedia.org/wiki/Hawthorne_effect):
-            * people perform better when they perceive that others are observing them.
+    - Hawthorne Effect AKA Observer Effect (http://en.wikipedia.org/wiki/Hawthorne_effect): People perform better when they perceive that others are observing them.
     - ability to see trends and use that information to understand ourselves better
-            * we now have the tools to examine our behavior and place our successes and failures under the microscope
 * statistics page
     - fun metrics (leaderboard, streak counters)
-            * who doesn't like being king of the hill?
-            * comes complete with bragging rights
+            + Who doesn't like being king of the hill?
+            + Comes complete with bragging rights.
     - "What gets measured gets managed" --Peter Drucker
     - group statistics
             * can compare each of us to see how me measure up to the overall group 
