@@ -1,5 +1,5 @@
 # reading_accountability_public
-Designed to automate public accountability for AACF UCI Freshman small group. 
+Designed to automate public accountability for AACF UCI freshman men small group. 
 
 See the spreadsheet here!
 
