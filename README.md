@@ -54,23 +54,23 @@ Contains functions that return my login credentials (get_login() and get_passwor
 crontab_file.txt:
 I'm using crontab to schedule my computer to run the scripts at specific intervals. It's a utility that comes with most Unix systems that you can set up to schedule your computer to automatically run programs at specific times.
 
-emailsender.py:
-Executes email sending by calling functions in sendemail.py. Logs into my email account and sends out emails to everyone on the mailing list (found in emailinfo.py)
+* emailsender.py:
+      - Executes email sending by calling functions in sendemail.py. Logs into my email account and sends out emails to everyone on the mailing list (found in emailinfo.py)
 
-sendemail.py:
-Contains the functions to be called in emailsender.py for sending emails. Uses smtplib to take care of logging in and sending emails. Writes errors to the emailcheckerlog.txt.
+* sendemail.py:
+      - Contains the functions to be called in emailsender.py for sending emails. Uses smtplib to take care of logging in and sending emails. Writes errors to the emailcheckerlog.txt.
 
-emailchecker.py:
-Executes email checking by calling functions in process. Parses through my email inbox and updates the spreadsheet based on the responses, and then archives all processed emails. 
+* emailchecker.py:
+      - Executes email checking by calling functions in process. Parses through my email inbox and updates the spreadsheet based on the responses, and then archives all processed emails. 
 
-processemail.py:
-Contains the functions to be called in emailchecker.py for processing emails. Uses gspread (https://github.com/burnash/gspread) to update the spreadsheet and imap4 to process emails. Writes errors to the emailcheckerlog.txt.
+* processemail.py:
+      - Contains the functions to be called in emailchecker.py for processing emails. Uses gspread (https://github.com/burnash/gspread) to update the spreadsheet and imap4 to process emails. Writes errors to the emailcheckerlog.txt.
 
-fillinblanks.py:
-Runs every morning at 4AM (except Sunday morning) to fill in the blanks in the spreadsheet for the people who didn't respond. Uses gspread to update the spreadsheet.
+* fillinblanks.py:
+      - Runs every morning at 4AM (except Sunday morning) to fill in the blanks in the spreadsheet for the people who didn't respond. Uses gspread to update the spreadsheet.
 
-weeklychapter.py:
-Updates the "Current Chapter" cell on the spreadsheet every Thursday. Uses gspread to update the spreadsheet.
+* weeklychapter.py:
+      - Updates the "Current Chapter" cell on the spreadsheet every Thursday. Uses gspread to update the spreadsheet.
 
 
 Results (as of 2015-03-23)
