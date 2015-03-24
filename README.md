@@ -1,5 +1,9 @@
 # reading_accountability_public
-Designed to automate public accountability for AACF UCI Freshman small group. http://goo.gl/zjL0GN
+Designed to automate public accountability for AACF UCI Freshman small group. 
+
+See the spreadsheet here!
+
+http://goo.gl/zjL0GN
 
 ============
 
@@ -18,9 +22,11 @@ It was time to stop only "trying harder"; it was time to leverage psychology and
 
 
 
-These are the features I used to execute our goals (and some more to boot!):
-
+Features
+---------
 * daily emails
+    - the scripts log into my email account and send out emails every day, prompting group members to respond if they completed their reading for the day
+    - the scripts parse through my email inbox and update the spreadsheet based on responses from group members
 * automated spreadsheet updating
     - social comparison theory
     - Hawthorne Effect
