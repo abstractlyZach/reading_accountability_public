@@ -36,12 +36,9 @@ Features
     - Hawthorne Effect AKA Observer Effect (http://en.wikipedia.org/wiki/Hawthorne_effect): People perform better when they perceive that others are observing them.
     - ability to see trends and use that information to understand ourselves better
 * statistics page
-    - fun metrics (leaderboard, streak counters)
-            + Who doesn't like being king of the hill?
-            + Comes complete with bragging rights.
+    - fun metrics (leaderboard, streak counters). Who doesn't like being king of the hill? (Comes complete with bragging rights.)
     - "What gets measured gets managed" --Peter Drucker
-    - group statistics
-            * can compare each of us to see how me measure up to the overall group 
+    - group statistics: We can compare each of us to see how me measure up to the overall group.
 * goals and rewards
     - reminds us that others are watching and supporting us
     - gives our supporters a method of involving themselves with our project
@@ -51,13 +48,29 @@ Features
 
 Technical details:
 -------------
-I wrote another script called email_info.py with functions that return my login credentials (get_login() and 
-get_password()) and a function that returns a dictionary mapping the names to the emails of all of the people on the
-mailing list (get_email_dict()).
+emailinfo.py:
+Contains functions that return my login credentials (get_login() and get_password()) and a function that returns a dictionary mapping the names to the emails of all of the people on the mailing list (get_email_dict()). This is not included in my Github repository since it contains my credentials and other people's email addresses.
 
-I'm using crontab to schedule my computer to run the scripts at specific intervals. You can see my crontab
-file, which is named crontab_file.txt in this repository. 
+crontab_file.txt:
+I'm using crontab to schedule my computer to run the scripts at specific intervals. It's a utility that comes with most Unix systems that you can set up to schedule your computer to automatically run programs at specific times.
 
+emailsender.py:
+Executes email sending by calling functions in sendemail.py. Logs into my email account and sends out emails to everyone on the mailing list (found in emailinfo.py)
+
+sendemail.py:
+Contains the functions to be called in emailsender.py for sending emails. Uses smtplib to take care of logging in and sending emails. Writes errors to the emailcheckerlog.txt.
+
+emailchecker.py:
+Executes email checking by calling functions in process. Parses through my email inbox and updates the spreadsheet based on the responses, and then archives all processed emails. 
+
+processemail.py:
+Contains the functions to be called in emailchecker.py for processing emails. Uses gspread (https://github.com/burnash/gspread) to update the spreadsheet and imap4 to process emails. Writes errors to the emailcheckerlog.txt.
+
+fillinblanks.py:
+Runs every morning at 4AM (except Sunday morning) to fill in the blanks in the spreadsheet for the people who didn't respond. Uses gspread to update the spreadsheet.
+
+weeklychapter.py:
+Updates the "Current Chapter" cell on the spreadsheet every Thursday. Uses gspread to update the spreadsheet.
 
 
 Results (as of 2015-03-23)
