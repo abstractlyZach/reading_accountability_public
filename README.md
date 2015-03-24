@@ -29,8 +29,8 @@ Features
 * automated spreadsheet updating      
     - the scripts parse through my email inbox and update the spreadsheet based on responses from group members
     - social comparison theory (http://en.wikipedia.org/wiki/Social_comparison_theory): 
-            * "Joe missed 2 readings this week and I only missed 1. Good for me!"
-            * "Bob had a perfect week. He's nothing special; if he can do it, so can I!"
+            - "Joe missed 2 readings this week and I only missed 1. Good for me!"
+            - "Bob had a perfect week. He's nothing special; if he can do it, so can I!"
     - Hawthorne Effect AKA Observer Effect (http://en.wikipedia.org/wiki/Hawthorne_effect):
             * people perform better when they perceive that others are observing them.
     - ability to see trends and use that information to understand ourselves better
