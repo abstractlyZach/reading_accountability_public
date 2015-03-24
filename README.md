@@ -18,33 +18,37 @@ We needed a system that would:
       (consciously or unconsciously) that the reading and its associated tasks were a chore
 0. not require tremendous upkeep. The system should be autonomous and low-maintenence. Whoever has to take care     of it should only have to deal with the occasional minor bugs.
  
-It was time to stop only "trying harder"; it was time to leverage psychology and programming to achieve our goals.
+It was time to stop only "trying harder"; it was time to leverage programming skills and psychology to achieve our goals.
 
 
 
 Features
 ---------
 * daily emails
-    - the scripts log into my email account and send out emails every day, prompting group members to respond if they completed their reading for the day
+    - the scripts log into my email account and send out emails every day, prompting group members to respond if they completed their reading for the day.
+* automated spreadsheet updating      
     - the scripts parse through my email inbox and update the spreadsheet based on responses from group members
-* automated spreadsheet updating
-    - social comparison theory
-    - Hawthorne Effect
+    - social comparison theory (http://en.wikipedia.org/wiki/Social_comparison_theory): 
+            * "Joe missed 2 readings this week and I only missed 1. Good for me!"
+            * "Bob had a perfect week. He's nothing special; if he can do it, so can I!"
+    - Hawthorne Effect AKA Observer Effect (http://en.wikipedia.org/wiki/Hawthorne_effect):
+            * people perform better when they perceive that others are observing them.
     - ability to see trends and use that information to understand ourselves better
+            * we now have the tools to examine our behavior and place our successes and failures under the microscope
 * statistics page
     - fun metrics (leaderboard, streak counters)
+            * who doesn't like being king of the hill?
+            * comes complete with bragging rights
     - "What gets measured gets managed" --Peter Drucker
-    - group statistics: can compare each of us to see how me measure up to the overall group 
+    - group statistics
+            * can compare each of us to see how me measure up to the overall group 
 * goals and rewards
     - reminds us that others are watching and supporting us
     - gives our supporters a method of involving themselves with our project
-    - gives us more excuses to have fun with this project and get to know each other as well as our supporters better
+    - gives us more excuses to have fun with this project and get to know each other as well as our supporters
     
 
 
-
-
--------------
 Technical details:
 -------------
 I wrote another script called email_info.py with functions that return my login credentials (get_login() and 
@@ -53,3 +57,14 @@ mailing list (get_email_dict()).
 
 I'm using crontab to schedule my computer to run the scripts at specific intervals. You can see my crontab
 file, which is named crontab_file.txt in this repository. 
+
+
+
+Results (as of 2015-03-23)
+-------------
+
+We weren't logging data before this project, but based on verbal responses and my memory (of those verbal responses), our group was reading at a 37.5% rate: every time our group of 8 people met, there were usually 3 who had completed all of their readings for the week and 5 who hadn't. After logging 7 days with the system, the group read at 79.13% rate, a huge improvement! Dazzling success! 
+
+Now, there are some differences to note. With the 37.5% statistic, we were polling the group members weekly. With the 79.13% statistic, we were polling the group members daily. There were cases where people would miss a reading with the old system and then they would give up on the entire week's readings. Also, if someone read 5/6 days with the old system, they would contribute a 0/1 to the group's statistic. However, with the new system, if someone read 5/6 days, they would contribute a 5/6 to the group, making our new statistics more accurate than the old statistics. Because of the reasons above, the 37.5% statistic is surely lower than reality. One of the great things that I've noticed is that the new system eliminated the cases where people would give up halfway through the week because now they had a new chance the next day, rather than having to wait for the week to end to have that second chance!
+
+There was a day where our group (who was averaging 85% at the time) read at a rate of 37.5% on a specific day. It was a major slump in our scores! Many reading streaks died that day :( . It was pretty discouraging for us. However, because of our newer, finer-grained system, we were able to pull up the metrics and try to understand what caused such widespread failure. We did a lot of introspection and I'm sure that many of us were gained a bit of insight on our behaviors through examining such an interesting trend. I know I did! The general consensus was that most of us missed that day because it was a holiday and it was right before midterms, so we had various reasons for missing reading that day (forgot, stressed with schoolwork, refused to check email at all because it was a holiday, etc.). Because of the data we were collecting, we were able to pinpoint a common failure point. Because of the data we were collecting, we equipped ourselves with the tools necessary to understand ourselves a bit better and we opened up the door to alter our behavior. We wouldn't have been able to do this otherwise!
